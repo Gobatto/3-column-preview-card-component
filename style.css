@@ -1,0 +1,54 @@
+body {
+    background: hsl(0, 0%, 95%);
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+}
+
+.car {
+    display: flex;
+}
+
+#sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+
+#suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+h2 {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+h3 {
+    color: hsl(0, 0%, 95%);
+}
+
+btn {
+    hsl(0, 0%, 95%)
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
