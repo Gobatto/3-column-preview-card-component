@@ -6,16 +6,25 @@ body {
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.car {
+.cars {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 24rem;
+    width: 16rem;
+    justify-content: space-between;
+    padding: 2.7rem;
 }
 
 #sedan {
     background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
 }
 
 #suv {
@@ -24,6 +33,13 @@ body {
 
 #luxury {
     background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+#sedan #suv #luxury {
+    display: flex;
+    justify-content: left;
+    align-items: left;
 }
 
 h2 {
@@ -42,6 +58,8 @@ h3 {
     text-decoration: none;
     border-radius: 36px;
     padding: 5px;
+    width: 9rem;
+    cursor: pointer;
 }
 
 #btn-sedan {
@@ -54,6 +72,17 @@ h3 {
 
 #btn-luxury {
     color: hsl(179, 100%, 13%);
+}
+
+.button:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+img {
+    height: 2.3rem;
+    width: 3.5rem;
 }
 
 footer {
@@ -73,3 +102,19 @@ footer {
     white-space: nowrap; 
     width: 1px;
   }
+
+  @media screen and (max-width: 600px) {
+    .container {
+        padding: 45rem 0 45rem 0;
+        flex-direction: column;
+    }
+    .cars {
+        flex-direction: column;
+    }
+    #sedan {
+        border-radius: 10px 10px 0 0;
+    }
+    #luxury {
+        border-radius: 0 0 10px 10px;
+    }
+}
