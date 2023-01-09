@@ -16,8 +16,8 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 24rem;
-    width: 16rem;
+    height: 20rem;
+    width: 12rem;
     justify-content: space-between;
     padding: 2.7rem;
 }
@@ -43,23 +43,31 @@ body {
 }
 
 h2 {
-    color: hsla(0, 0%, 100%, 0.75);
-    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
 }
 
 h3 {
-    color: hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
     font-family: 'Big Shoulders Display', cursive;
+
 }
 
 .button {
-    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
     background: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     border-radius: 36px;
     padding: 5px;
-    width: 9rem;
+    width: 7rem;
+    height: 2rem;
     cursor: pointer;
+    font-size: 15px;
 }
 
 #btn-sedan {
@@ -74,8 +82,11 @@ h3 {
     color: hsl(179, 100%, 13%);
 }
 
-.button:hover {
+#btn-sedan:hover, #btn-suv:hover, #btn-luxury:hover {
     color: hsl(0, 0%, 95%);
+}
+
+.button:hover {
     background-color: transparent;
     border: 2px solid hsl(0, 0%, 95%);
 }
