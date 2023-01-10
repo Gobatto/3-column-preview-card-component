@@ -2,7 +2,7 @@
 
 body {
     background: hsl(0, 0%, 95%);
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
 .container {
@@ -19,7 +19,7 @@ body {
     height: 20em;
     width: 12em;
     justify-content: space-between;
-    padding: 2.7rem;
+    padding: 2.7em;
 }
 
 #sedan {
@@ -65,8 +65,8 @@ h3 {
     text-decoration: none;
     border-radius: 36px;
     padding: 5px;
-    width: 7rem;
-    height: 2rem;
+    width: 7em;
+    height: 2em;
     cursor: pointer;
     font-size: 15px;
 }
@@ -93,8 +93,8 @@ h3 {
 }
 
 img {
-    height: 2.3rem;
-    width: 3.5rem;
+    height: 2.3em;
+    width: 3.5em;
 }
 
 .sr-only:not(:focus):not(:active) {
