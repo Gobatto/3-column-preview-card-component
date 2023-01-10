@@ -111,9 +111,11 @@ img {
     .container {
         padding: 12em 0 12em 0;
         flex-direction: column;
+        width: 50vh;
     }
     .cars {
         flex-direction: column;
+        justify-content: center;
     }
     #sedan {
         border-radius: 10px 10px 0 0;
