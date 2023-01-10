@@ -2,7 +2,7 @@
 
 body {
     background: hsl(0, 0%, 95%);
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .container {
@@ -16,8 +16,8 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 20rem;
-    width: 12rem;
+    height: 20em;
+    width: 12em;
     justify-content: space-between;
     padding: 2.7rem;
 }
@@ -46,6 +46,7 @@ h2 {
     color: hsl(0, 0%, 95%);
     font-family: 'Big Shoulders Display', cursive;
     font-size: 30px;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -96,14 +97,6 @@ img {
     width: 3.5rem;
 }
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 5px;
-    width: 100%;
-    text-align: center;
-}
-
 .sr-only:not(:focus):not(:active) {
     clip: rect(0 0 0 0); 
     clip-path: inset(50%);
@@ -116,7 +109,7 @@ footer {
 
   @media screen and (max-width: 600px) {
     .container {
-        padding: 45rem 0 45rem 0;
+        padding: 12em 0 12em 0;
         flex-direction: column;
     }
     .cars {
